@@ -1,0 +1,5 @@
+@"
+out/
+.idea/
+*.class
+"@ | Set-Content .gitignore
