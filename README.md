@@ -50,16 +50,6 @@ For each algorithm, the application tracks:
 - Memory usage
 - Solution status
 
----
-
-## 🖥️ Application Preview
-
-![Maze Solver GUI](assets/maze-solver-gui.png)
-
-The GUI provides controls for maze generation, algorithm selection, animation speed, terrain configuration, and algorithm comparison.
-
----
-
 ## 🧠 Algorithms
 
 ### A* Search
