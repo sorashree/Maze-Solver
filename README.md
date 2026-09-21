@@ -64,6 +64,25 @@ The GUI provides controls for maze generation, algorithm selection, animation sp
 
 ### A* Search
 
+📊 Metrics
+
+Example metrics displayed by the application:
+
+Metric	Description
+Execution Time	Time required by the algorithm to complete
+Path Length	Number of steps in the resulting path
+Nodes Explored	Number of nodes examined during the search
+Path Cost	Total cost of traversing the resulting path
+Memory Usage	Approximate memory used during execution
+Status	Indicates whether a solution was found
+🛠️ Technologies
+Java
+Java Swing
+Data Structures & Algorithms
+Graph Traversal
+Pathfinding
+Object-Oriented Programming
+
 A* combines the actual cost of reaching a node with a heuristic estimate of the remaining distance to the goal.
 
 It uses:
