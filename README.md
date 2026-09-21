@@ -1,37 +1,47 @@
-﻿# Maze-Solver
-# Maze Solver
+# 🧩 Maze Solver
 
-A Java-based interactive maze generation and pathfinding application that demonstrates and compares multiple graph traversal and shortest-path algorithms through a graphical user interface.
+> **Interactive Java application for generating, visualizing, and comparing maze pathfinding algorithms.**
 
-The application allows users to generate customizable random mazes, visualize algorithm execution, compare different algorithms, and analyze their performance using metrics such as execution time, path length, nodes explored, path cost, and memory usage.
+Maze Solver is a Java-based interactive application that generates customizable random mazes and visualizes multiple pathfinding algorithms through a graphical user interface.
 
-## Demo
+The project is designed to demonstrate the practical application of **Data Structures and Algorithms**, while providing performance metrics that allow different algorithms to be observed and compared on the same maze.
 
-![Maze Solver GUI](assets/maze-solver-gui.png)
+---
 
-## Features
+## ✨ Features
+
+### 🗺️ Maze Generation
 
 - Generate random mazes
 - Customize maze size
-- Control maze complexity and blocked cells
-- Generate mazes with terrain costs
-- Set and visualize Start and Goal nodes
-- Solve mazes using multiple algorithms:
-  - A* Search
-  - Breadth-First Search (BFS)
-  - Depth-First Search (DFS)
-  - Dijkstra's Algorithm
-- Visualize the solution path
+- Control blocked cells and maze complexity
+- Support terrain-based cell costs
+- Start and Goal node visualization
+- Regenerate mazes instantly
+
+### 🔎 Pathfinding Algorithms
+
+The application supports four major pathfinding algorithms:
+
+- **A\* Search**
+- **Breadth-First Search (BFS)**
+- **Depth-First Search (DFS)**
+- **Dijkstra's Algorithm**
+
+### 📊 Visualization & Analysis
+
 - Animated algorithm execution
 - Adjustable search speed
-- Compare all algorithms
-- Detect unsolvable mazes
-- Clear and regenerate maze paths
-- View algorithm performance metrics
+- Visual exploration of nodes
+- Solution-path visualization
+- Unsolvable-maze detection
+- Compare multiple algorithms
+- Clear and regenerate paths
+- Algorithm execution history
 
-## Performance Metrics
+### 📈 Performance Metrics
 
-The application provides the following metrics for each algorithm:
+For each algorithm, the application tracks:
 
 - Execution time
 - Path length / steps
@@ -40,80 +50,23 @@ The application provides the following metrics for each algorithm:
 - Memory usage
 - Solution status
 
-A history table allows users to compare the results of different algorithm runs.
+---
 
-## Algorithms
+## 🖥️ Application Preview
+
+![Maze Solver GUI](assets/maze-solver-gui.png)
+
+The GUI provides controls for maze generation, algorithm selection, animation speed, terrain configuration, and algorithm comparison.
+
+---
+
+## 🧠 Algorithms
 
 ### A* Search
 
-A* uses a heuristic function to guide the search toward the goal while considering the cost of reaching each node.
+A* combines the actual cost of reaching a node with a heuristic estimate of the remaining distance to the goal.
 
-### Breadth-First Search (BFS)
+It uses:
 
-BFS explores the maze level by level and can find the shortest path in an unweighted maze.
-
-### Depth-First Search (DFS)
-
-DFS explores one branch as deeply as possible before backtracking. It is useful for demonstrating graph traversal, although it does not necessarily produce the shortest path.
-
-### Dijkstra's Algorithm
-
-Dijkstra's algorithm finds the minimum-cost path by considering the accumulated cost of reaching each node.
-
-Requirements
-Java Development Kit (JDK) 8 or higher
-Java IDE such as IntelliJ IDEA, VS Code, or Eclipse
-Windows, Linux, or macOS
-Installation
-1. Clone the repository
-git clone https://github.com/sorashree/Maze-Solver.git
-2. Open the project
-
-Open the project folder in IntelliJ IDEA, VS Code, Eclipse, or another Java IDE.
-
-3. Compile the project
-
-From the project root:
-
-javac -d out src\*.java
-4. Run the application
-java -cp out Maze_GUI
-
-Alternatively, run the Maze_GUI class directly from your IDE.
-
-Usage
-Launch the Maze_GUI application.
-Generate a new random maze.
-Adjust maze size and maze-generation parameters if required.
-Select a pathfinding algorithm.
-Run the algorithm to visualize the search.
-Observe the generated solution path.
-Review the performance metrics.
-Use Compare All to run and compare multiple algorithms.
-Use Clear Path to reset the current solution.
-Algorithm Comparison
-
-The application makes it possible to observe how different algorithms behave on the same maze.
-
-Algorithm	Shortest Path*	Weighted Costs	Heuristic
-BFS	Yes	No	No
-DFS	No	No	No
-Dijkstra	Yes	Yes	No
-A*	Yes	Yes	Yes
-
-*For the corresponding problem assumptions and when a solution exists.
-
-What This Project Demonstrates
-
-This project demonstrates practical applications of:
-
-Data Structures and Algorithms
-Graph traversal
-Shortest-path algorithms
-Heuristic search
-Priority queues
-Queues and stacks
-Grid-based pathfinding
-Algorithm visualization
-Java GUI development
-Performance analysis
+```text
+f(n) = g(n) + h(n)
